@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Seletores CSS</title>
+<style>
+  /* Seletor de ID */
+  #titulo {
+    color: red;
+    text-align: center;
+  }
+
+  /* Seletor de Classe */
+  .paragrafo-destaque {
+    font-weight: bold;
+  }
+
+  /* Seletor de Atributos */
+  [data-info="importante"] {
+    color: white;
+    background-color: brown;
+    width: fit-content;
+  }
+
+  /* Pseudoclasse */
+  li:hover {
+    background-color: lightgray;
+  }
+</style>
+</head>
+<body>
+<!-- Seletor de ID -->
+<h1 id="titulo">Título Principal</h1>
+
+<!-- Seletor de Classe -->
+<p class="paragrafo-destaque">Este parágrafo possui texto em negrito.</p>
+
+<!-- Seletor de Atributos -->
+<p data-info="importante">Este parágrafo é considerado importante.</p>
+
+<!-- Pseudoclasse -->
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+</body>
+</html>
