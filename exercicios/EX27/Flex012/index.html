@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+            
+            
+        }
+
+        div#cxA {
+            /* 
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px; 
+            */
+
+            flex: 1 0 200px
+            ;
+        }
+
+        div#cxB {
+            /* 
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 150px; */
+
+            flex: 1 1 150px
+            ;
+        }
+
+        div#cxC {
+            /* 
+            flex-grow: 1;
+            flex-shrink: 8;
+            flex-basis: 200px; 
+            */
+
+            flex: 1 8 200px
+            ;
+        }
+
+        div#cxD {
+            /* 
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto
+            */
+
+            flex: 0 1 auto
+            /* ou flex: initial */
+            ;
+        }
+
+        div#cxE {
+            /* 
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto;
+            */
+
+            flex: 0 0 auto
+            /* ou flex: none */
+            ;
+        }
+
+        div#cxF {
+            /* 
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto; 
+            */
+
+            flex: 1 1 auto
+            /* ou flex: auto */
+            ;
+             }
+
+             div#cxG {
+            /* 
+            flex-grow: 3;
+            flex-shrink: 1;
+            flex-basis: auto;
+            */
+
+            flex: 3
+            /* Configura apenas o flex-grow, porém deixa o demais flex's no padrão com os valores acima */
+            ;
+             }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+        <div class="item" id="cxD">D</div>
+        <div class="item" id="cxE">E</div>
+        <div class="item" id="cxF">F</div>
+        <div class="item" id="cxF">G</div>
+    
+        
+    </div>
+    
+</body>
+</html>
